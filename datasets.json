@@ -1,0 +1,8 @@
+{
+ "MyProject": {
+  "slides": "/mnt/zqy_data/LNM/TCGA/tcga_data/",
+  "roi": "/mnt/zqy_data/LNM/TCGA/tcga_data/rois",
+  "tiles": "/mnt/zqy_data/Slideflow/BLCA_LNM/tiles",
+  "tfrecords": "/mnt/zqy_data/Slideflow/BLCA_LNM/tfrecords"
+ }
+}

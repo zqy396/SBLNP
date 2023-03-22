@@ -1,0 +1,11 @@
+{
+ "name": "MyProject",
+ "annotations": "./annotations.csv",
+ "dataset_config": "./datasets.json",
+ "sources": [
+  "MyProject"
+ ],
+ "models_dir": "./models",
+ "eval_dir": "./eval",
+ "slideflow_version": "1.5.2"
+}
