@@ -18,7 +18,7 @@ You can start your GDC (https://portal.gdc.cancer.gov/projects/TCGA-BLCA) in the
 ## WSI Patching
 
 Using the openslide-python toolkit to crop patches with a size of 448 × 448 pixels for each WSI.
-`python Extract2048.py`
+`python histolab_a.py`
 
 ## Extract Features Using Resnet50
 
@@ -30,4 +30,10 @@ Using the openslide-python toolkit to crop patches with a size of 448 × 448 pix
 
 ## Train
 
+`python train.py`
+
 ## Test
+
+`python eval.py`
+
+The results will be stored in the output folder as set.
