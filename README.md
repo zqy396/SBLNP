@@ -18,17 +18,24 @@ You can start your GDC (https://portal.gdc.cancer.gov/projects/TCGA-BLCA) in the
 ## WSI Patching
 
 Using the openslide-python toolkit to crop patches with a size of 448 × 448 pixels for each WSI.
+
 `python histolab_a.py`
 
 ## Extract Features Using Resnet50
+
+Extracte 2048 relevant features for each patch using a ResNet-50 neural network.
 
 `python Extract2048.py`
 
 ## Reduce Dimensions
 
+Using an adaptive encoder for dimensionality reduction, reducing the 2048 dimensions extracted from ResNet-50 to 512 dimensions.
+
 `python AE.py`
 
 ## Train
+
+SBLNP is an end-to-end weakly-supervised deep learning model, an advanced binary classification network based on multiple instance learning (MIL) and attention mechanism. See the article for more training details.
 
 `python train.py`
 
