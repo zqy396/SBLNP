@@ -68,7 +68,7 @@ The pipeline for a deep learning classification experiment is separated into thr
 
 - Explainability - generate predictive heatmaps and analyze learned image features.
 
-In addition to standard tile-based neural networks, slideflow supports training models with the multi-instance learning (MIL) model CLAM. 
+In addition to standard tile-based neural networks, slideflow supports training models with the multi-instance learning (MIL) model CLAM. Based on this, it can also be used to complete the training task of LNM prediction model. Sample codes are shown below.
 
 ## Generating features
 
@@ -76,8 +76,20 @@ In addition to standard tile-based neural networks, slideflow supports training 
 
 ## Training
 
+To train a CLAM model from the saved activations.
+
 `python clam_training.py`
 
 ## Evaluation
 
 `python clam_evaluation.py`
+
+## Heatmap
+
+Predictive heatmaps can be created for an entire WSI. Heatmaps will be saved and exported in the project directory. 
+
+`python clam_heatmap.py`
+
+Here is an example diagram.
+
+![heatmap_inset](https://user-images.githubusercontent.com/65389322/226994465-1d0ffabc-48c1-4f97-9bca-d6d6a501cb71.jpg)
