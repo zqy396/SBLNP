@@ -47,6 +47,9 @@ SBLNP is an end-to-end weakly-supervised deep learning model, an advanced binary
 
 The results will be stored in the output folder as set.
 
+
+
+
 # Based on Slideflow framework
 
 ![overview](https://user-images.githubusercontent.com/65389322/226990448-9e06cddd-6afd-4427-b3bc-b6392b1d2377.png)
@@ -101,17 +104,3 @@ Here is an example diagram.
 Finally, we thank the authors of the Slideflow framework for their contributions. If you need to, use the framework for free to complete your tasks and cite their work.
 
 James Dolezal, Sara Kochanny, & Frederick Howard. (2022). Slideflow: A Unified Deep Learning Pipeline for Digital Histology (1.5.0). Zenodo. https://doi.org/10.5281/zenodo.5703792
-
-`@software{james_dolezal_2022_5703792,
-  author       = {James Dolezal and
-                  Sara Kochanny and
-                  Frederick Howard},
-  title        = {{Slideflow: A Unified Deep Learning Pipeline for
-                   Digital Histology}},
-  month        = oct,
-  year         = 2022,
-  publisher    = {Zenodo},
-  version      = {1.5.0},
-  doi          = {10.5281/zenodo.5703792},
-  url          = {https://doi.org/10.5281/zenodo.5703792}
-}`
