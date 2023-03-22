@@ -72,6 +72,8 @@ In addition to standard tile-based neural networks, slideflow supports training 
 
 ## Generating features
 
+The first step in the CLAM pipeline is generating layer activations for tiles extracted from whole-slide images.
+
 `python clam_features.py`
 
 ## Training
@@ -93,3 +95,23 @@ Predictive heatmaps can be created for an entire WSI. Heatmaps will be saved and
 Here is an example diagram.
 
 ![heatmap_inset](https://user-images.githubusercontent.com/65389322/226994465-1d0ffabc-48c1-4f97-9bca-d6d6a501cb71.jpg)
+
+## Acknowledgement
+
+Finally, we thank the authors of the Slideflow framework for their contributions. If you need to, use the framework for free to complete your tasks and cite their work.
+
+James Dolezal, Sara Kochanny, & Frederick Howard. (2022). Slideflow: A Unified Deep Learning Pipeline for Digital Histology (1.5.0). Zenodo. https://doi.org/10.5281/zenodo.5703792
+
+`@software{james_dolezal_2022_5703792,
+  author       = {James Dolezal and
+                  Sara Kochanny and
+                  Frederick Howard},
+  title        = {{Slideflow: A Unified Deep Learning Pipeline for
+                   Digital Histology}},
+  month        = oct,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {1.5.0},
+  doi          = {10.5281/zenodo.5703792},
+  url          = {https://doi.org/10.5281/zenodo.5703792}
+}`
