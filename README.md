@@ -3,7 +3,7 @@
 
 Accurate prediction of lymph node metastasis (LNM) status is important for the diagnosis and treatment of patients with muscle-invasive bladder cancer (MIBC). In this multicenter study, we developed a weakly-supervised deep learning-based model (named SBLNP) to predict LNM status from routine H&E-stained slides of primary muscle invasive bladder cancer (MIBC), and attempted to identify new histopathological features. Our results demonstrated that SBLNP performed well in three independent cohorts, showing excellent generalization ability. The combined classifier based on SBLNP and clinicopathologic variables demonstrated satisfactory performance. Interestingly, the SBLNP generated a new biological hypothesis, defining the lymphocytic inflammatory stroma as a key factor for prediction. To our knowledge, this is the first study that links inflammatory infiltrate in the stroma of MIBC to the LNM status. With the assistance of the SBLNP, clinicians are expected to identify appropriate population for neoadjuvant chemotherapy and pelvic lymph node dissection, avoiding the risks of under- or overtreatment.
 
-![1679506648995](https://user-images.githubusercontent.com/65389322/226990781-4c892e46-a057-4a36-b854-51baae6f24c6.png)
+![1679507098295](https://user-images.githubusercontent.com/65389322/226992509-0ce20457-90db-46e2-b122-712bf6ab5855.png)
 
 ## Pre-requisites:
 
