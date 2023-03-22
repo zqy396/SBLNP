@@ -5,11 +5,11 @@ Accurate prediction of lymph node metastasis (LNM) status is important for the d
 
 ## Pre-requisites:
 
--Linux (Tested on Ubuntu 18.04)
+- Linux (Tested on Ubuntu 18.04)
  
--NVIDIA GPU (Tested on Nvidia GeForce RTX 3060 Ti x 2 on local workstations)
+- NVIDIA GPU (Tested on Nvidia GeForce RTX 3060 Ti x 2 on local workstations)
  
--Python (3.8.12), h5py (3.6.0), matplotlib (3.5.2), numpy (1.23.5), opencv-python (4.5.5.64), openslide-python (1.1.2), pandas (1.4.2), pillow (9.0.1), PyTorch (1.10.0+cu111), scikit-learn (1.1.3), scipy (1.3.1),  tensorboardx (2.5), torchvision (0.11.0+cu111), smooth-topk, histolab (0.5.1).
+- Python (3.8.12), h5py (3.6.0), matplotlib (3.5.2), numpy (1.23.5), opencv-python (4.5.5.64), openslide-python (1.1.2), pandas (1.4.2), pillow (9.0.1), PyTorch (1.10.0+cu111), scikit-learn (1.1.3), scipy (1.3.1),  tensorboardx (2.5), torchvision (0.11.0+cu111), smooth-topk, histolab (0.5.1).
 
 ## WSI Acquisition
 
