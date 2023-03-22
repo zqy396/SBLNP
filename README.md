@@ -3,7 +3,7 @@
 
 Accurate prediction of lymph node metastasis (LNM) status is important for the diagnosis and treatment of patients with muscle-invasive bladder cancer (MIBC). In this multicenter study, we developed a weakly-supervised deep learning-based model (named SBLNP) to predict LNM status from routine H&E-stained slides of primary muscle invasive bladder cancer (MIBC), and attempted to identify new histopathological features. Our results demonstrated that SBLNP performed well in three independent cohorts, showing excellent generalization ability. The combined classifier based on SBLNP and clinicopathologic variables demonstrated satisfactory performance. Interestingly, the SBLNP generated a new biological hypothesis, defining the lymphocytic inflammatory stroma as a key factor for prediction. To our knowledge, this is the first study that links inflammatory infiltrate in the stroma of MIBC to the LNM status. With the assistance of the SBLNP, clinicians are expected to identify appropriate population for neoadjuvant chemotherapy and pelvic lymph node dissection, avoiding the risks of under- or overtreatment.
 
-![Figure](https://user-images.githubusercontent.com/65389322/226987131-78619ef6-514b-4895-841f-9e8fb304a6fc.jpg)
+![1679506648995](https://user-images.githubusercontent.com/65389322/226990781-4c892e46-a057-4a36-b854-51baae6f24c6.png)
 
 ## Pre-requisites:
 
@@ -46,3 +46,38 @@ SBLNP is an end-to-end weakly-supervised deep learning model, an advanced binary
 `python eval.py`
 
 The results will be stored in the output folder as set.
+
+# Based on Slideflow framework
+
+![overview](https://user-images.githubusercontent.com/65389322/226990448-9e06cddd-6afd-4427-b3bc-b6392b1d2377.png)
+
+In addition to the above methods, we also provide another training method based on Slideflow framework, provides tools for easily building and testing a variety of deep learning models for digital pathology.
+
+## Requirements
+- Python >= 3.7 (<3.10 if using cuCIM)
+
+- Tensorflow 2.5-2.9 or PyTorch 1.9-1.12
+
+`pip install slideflow[torch] cucim cupy-cuda11x`
+
+The pipeline for a deep learning classification experiment is separated into three phases.
+
+- Tile extraction - annotate slides with regions of interest (ROIs) [optional] and extract image tiles from whole-slide images.
+
+- Model training - determine model parameters, train a model, and evaluate the model on a held-out test set.
+
+- Explainability - generate predictive heatmaps and analyze learned image features.
+
+In addition to standard tile-based neural networks, slideflow supports training models with the multi-instance learning (MIL) model CLAM. 
+
+## Generating features
+
+`python clam_features.py`
+
+## Training
+
+`python clam_training.py`
+
+## Evaluation
+
+`python clam_evaluation.py`
